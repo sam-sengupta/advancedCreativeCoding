@@ -83,7 +83,7 @@ class makingImages{
     this.season = season;
     this.x = random(width);
     this.y = 10;
-    this.speedY = random(0, 5);
+    this.speedY = random(1, 10);
   }
 
   move(){
@@ -179,10 +179,10 @@ class makingImages{
 }
 
 class makingCircles{
-  contructor(diameter){
+  constructor(diameter){
 		this.x = random(width);
     this.y = 10;
-    this.speedY = random(0, 5);
+    this.speedY = random(1, 10);
     this.diameter = diameter;
   }
 	move() {
@@ -194,9 +194,9 @@ class makingCircles{
   render(){
     strokeWeight(10);
     stroke('white');
-    fill('white');
+    fill('black');
 		for (var i = 0; i <= circleCounter; i++) {
-			circle(this.x, this.y, (this.diameter + 1) * 10);
+			circle(this.x, this.y, (this.diameter + 3) * 7);
 		}
   }
 }
