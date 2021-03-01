@@ -19,7 +19,7 @@ function preload(){
   sun = loadImage("sun.PNG");
   wind = loadImage("wind.PNG");
   winter = loadImage("winter.PNG");
-  table = loadTable('assets/responses.csv', 'csv', 'header');
+  table = loadTable('responses.csv', 'csv', 'header');
 }
 
 function setup() {
