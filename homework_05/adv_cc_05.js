@@ -1,8 +1,10 @@
 var product_data;
 var input;
 var main_url = "https://makeup-api.herokuapp.com/api/v1/products.json?product_type="
-var productName = "blush"
+var productName = "blush";
 var products = [];
+var brandName;
+//var brandcounter = 0;
 
 function preload(){
   var url = main_url + productName;
@@ -15,7 +17,6 @@ function getProduct(product){
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    
     var button = select('button');
     input = select('#product');
     button.mousePressed(updateBrand);
@@ -26,8 +27,12 @@ function updateBrand(){
     var url = main_url + finalUrlPart;
     loadJSON(url, getProduct);
     products = [];
-    for (var i = 0; i < product_data.length - 1; i++) {
-        products.push(new writingText(input.value()));
+    brandcounter = 0;
+    products_len = product_data.length;
+    for (var i = 0; i < products_len - 1; i++) {
+        brandName = product_data[i].brand;
+        products.push(new writingText(brandName));
+        //brandcounter++;
     }
 }
 
@@ -60,6 +65,6 @@ class writingText{
     writing() {
         textSize(25);
         fill('white');
-        text("Test: " + this.string, this.x, this.y);
+        text('' + this.string, this.x, this.y);
     }  
 }
