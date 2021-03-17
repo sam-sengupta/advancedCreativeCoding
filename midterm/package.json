@@ -1,0 +1,28 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Repo for my node demo UwU",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sam-sengupta/node-demo.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "node"
+  ],
+  "author": "Sam Sengupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sam-sengupta/node-demo/issues"
+  },
+  "homepage": "https://github.com/sam-sengupta/node-demo#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {}
+}
