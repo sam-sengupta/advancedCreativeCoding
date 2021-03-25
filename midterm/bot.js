@@ -17,7 +17,7 @@ var tweet;
 
 botTweet();
 
-setInterval(botTweet, 30*60*1000);
+setInterval(botTweet, 24*60*60*1000);
 
 function botTweet(error, data, response) {
 	request(main_url, gotData);
