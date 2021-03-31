@@ -4,11 +4,12 @@
   "description": "drawing tool UwU",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sam-sengupta/node-demo.git"
+    "url": "git+https://github.com/sam-sengupta/advancedCreativeCoding/tree/main/homework_07"
   },
   "keywords": [
     "drawing",
@@ -18,9 +19,9 @@
   "author": "Sam Sengupta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sam-sengupta/node-demo/issues"
+    "url": "https://github.com/sam-sengupta/advancedCreativeCoding/tree/main/homework_07/issues"
   },
-  "homepage": "https://github.com/sam-sengupta/node-demo#readme",
+  "homepage": "https://github.com/sam-sengupta/advancedCreativeCoding/tree/main/homework_07#readme",
   "dependencies": {
     "twit": "^2.2.11"
   },
