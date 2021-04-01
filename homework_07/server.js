@@ -20,3 +20,4 @@ function newConnection(socket) {
 		socket.broadcast.emit('pattern', data);
 	}
 }
+
