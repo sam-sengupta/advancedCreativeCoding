@@ -112,3 +112,9 @@ function mouseDragged(){
 
     socket.emit('pattern', data);
 }
+
+function keyPressed() {
+    if(keyCode == DELETE) {
+        console.log("pressed the delete :'(");
+        background('black');
+}
