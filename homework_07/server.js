@@ -11,7 +11,7 @@ io.sockets.on('connection', newConnection);
 function newConnection(socket) {
 	console.log("new connection!!" + socket.id);
 	socket.on('pattern', patternMsg);
-	function patternMsg(data) {
+	function patternMsg(data){
 		socket.broadcast.emit('pattern', data);
 	}
 }

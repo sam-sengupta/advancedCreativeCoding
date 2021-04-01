@@ -35,19 +35,19 @@ function makeConcs(){
 }
 
 function newDrawing(data){
-    if(patternType == 1) {
+    //if(patternType == 1) {
         push(); 
         translate(data.x, data.y);  
         noStroke(); 
         for (var i = 0; i < random(100); i++) { 
             fill(random(255), random(255), random(255));
-            var b = random(80); 
+            var b = random(100); 
             rotate(radians(data.size)); 
             triangle(0, 20, b, 20, 20, 20);
         } 
         pop();
-    }
-    else if(patternType == 2) {
+    // }
+    // else if(patternType == 2) {
         push(); 
         for (var i = 1; i < 5; i++) { 
             stroke(random(255), random(255), random(255));
@@ -55,8 +55,8 @@ function newDrawing(data){
             ellipse(data.x, data.y, data.size, data.size)
         } 
         pop();
-    }
-    else if(patternType == 3) {
+    //}
+    //else if(patternType == 3) {
         push();
         translate(data.x, data.y);
         noFill(); 
@@ -65,7 +65,7 @@ function newDrawing(data){
             ellipse(0, 0, i * data.size, i * data.size);
         } 
         pop();
-    }
+    //}
 }
 
 function draw() {
@@ -78,7 +78,7 @@ function mouseDragged(){
         noStroke(); 
         for (var i = 0; i < random(100); i++) { 
             fill(random(255), random(255), random(255));
-            var b = random(80); 
+            var b = random(100); 
             rotate(radians(slider.value())); 
             triangle(0, 20, b, 20, 20, 20);
         } 
