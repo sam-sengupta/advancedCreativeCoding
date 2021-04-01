@@ -1,3 +1,4 @@
-# lipstick-twitter-bot
+# collaborative drawing tool
 
-Twitter bot: https://twitter.com/TODAYSLlPSTlCK
+app link: 
+
